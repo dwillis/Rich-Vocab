@@ -4,13 +4,16 @@
 
 <h3>Vocabulary Richness Detector</h3>
 
-<p>This simple application uses a Python implementation of <a href="http://en.wikipedia.org/wiki/Udny_Yule">Yule</a>'s I score (the inverse of Yule's K) to determine the diversity of vocabulary present in text. Enter some text into the form below and click the Go! button to see the Yule I score. The higher the score, the richer the vocabulary and, arguably, the more difficult the text.</p>
+<p>This simple application uses <a href="http://swizec.com/blog/measuring-vocabulary-richness-with-python/swizec/2528">a Python implementation</a> of <a href="http://en.wikipedia.org/wiki/Udny_Yule">Yule</a>'s I score (the inverse of Yule's K) to determine the diversity of vocabulary present in text. Enter some text into the form below and click the Go! button to see the Yule I score. The higher the score, the richer the vocabulary and, arguably, the more difficult the text.</p>
 
-<p>Some sample Yule's I scores:</p>
+<h4>Some sample Yule's I scores:</h4>
 
 <ul>
-  <li>MLK's "I Have A Dream Speech": 7.11853157731</li>
-  
+  <li><a href="http://www.archives.gov/exhibits/featured_documents/magna_carta/translation.html">The Magna Carta</a>: 2.55</li>
+  <li><a href="http://www.federalreserve.gov/newsevents/speech/bernanke20110908a.htm">Ben Bernanke speech on the economy, Sept. 8, 2011</a>: 6.72</li>
+  <li><a href="http://www.americanrhetoric.com/speeches/mlkihaveadream.htm">MLK's "I Have A Dream" Speech</a>: 7.12</li>
+  <li><a href="http://www.nytimes.com/2011/10/01/opinion/improving-no-child-left-behind.html?pagewanted=all">NYT editorial on NCLB, Oct. 1, 2011</a>: 15.70</li>
+  <li><a href="http://avalon.law.yale.edu/19th_century/gettyb.asp">The Gettysburg Address</a>: 20.45</a></li>
 </ul>
 
 <form action="." method="post">{% csrf_token %}
