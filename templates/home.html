@@ -1,6 +1,10 @@
-<h1>Vocabulary Richness Detector</h1>
+{% extends "base.html" %}
 
-<p>This simple application uses a Python implementation of Yule's I score to determine the diversity of vocabulary present in text. Enter some text into the form below and click the Go! button to see the Yule I score. The higher the score, the richer the vocabulary and, arguably, the more difficult the text.</p>
+{% block content %}
+
+<h3>Vocabulary Richness Detector</h3>
+
+<p>This simple application uses a Python implementation of <a href="http://en.wikipedia.org/wiki/Udny_Yule">Yule</a>'s I score (the inverse of Yule's K) to determine the diversity of vocabulary present in text. Enter some text into the form below and click the Go! button to see the Yule I score. The higher the score, the richer the vocabulary and, arguably, the more difficult the text.</p>
 
 <p>Some sample Yule's I scores:</p>
 
@@ -10,12 +14,15 @@
 </ul>
 
 <form action="." method="post">{% csrf_token %}
-<input type="search" name="text" id="text" value="enter text here" />
+<textarea cols="50" rows="25" name="text">
+</textarea>
 <input type="submit" value="Go!" />
 </form>
 
 {% if score %}
-  <h3>This text's Yule's I score: {{ score }}</h3>
+  <h1>This text's Yule's I score: {{ score }}</h1>
 {% endif %}
+
+{% endblock %}
 
 
