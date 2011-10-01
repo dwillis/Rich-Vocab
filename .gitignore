@@ -4,3 +4,5 @@ include
 lib
 .Python
 *.pyc
+*.sqlite3
+yule
