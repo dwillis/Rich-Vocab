@@ -1,3 +1,8 @@
+"""
+Yule's I measurement courtesy of Swizec Teller, 
+http://swizec.com/blog/measuring-vocabulary-richness-with-python/swizec/2528
+"""
+
 from nltk.stem.porter import PorterStemmer
 from itertools import groupby
  
