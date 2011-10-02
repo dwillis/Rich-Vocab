@@ -1,0 +1,5 @@
+RichVocab is a demonstration Django app for deployment on Heroku. It was inspired by Swizec Teller's blog post about measuring the richness of vocabulary in text and by Heroku's newly-announced Python support.
+
+* Demo:                       http://richvocab.herokuapp.com/
+* Deploying Django on Heroku: http://devcenter.heroku.com/articles/django
+* Yule's I implementation:    http://swizec.com/blog/measuring-vocabulary-richness-with-python/swizec/2528
